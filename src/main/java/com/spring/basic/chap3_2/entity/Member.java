@@ -1,5 +1,6 @@
 package com.spring.basic.chap3_2.entity;
 
+import com.spring.basic.chap5_3.dto.request.MemberCreateDto;
 import lombok.*;
 
 import java.util.UUID;
@@ -17,6 +18,14 @@ public class Member {
     private String account;
     private String password;
     private String nickname;
+
+    // DTO를 Entity로 변환하는 생성자
+    /*public Member(MemberCreateDto dto) {
+        this.uid = UUID.randomUUID().toString();
+        this.account = dto.getUserAcc();
+        this.password = dto.getPw();
+        this.nickname = dto.getNick();
+    }*/
 
 
 //    private Member(Builder builder) {
