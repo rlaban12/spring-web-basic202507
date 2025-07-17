@@ -7,7 +7,6 @@ import com.spring.basic.chap3_2.entity.Member;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 // 클라이언트에게 멤버 목록을 보내줄 때 사용할 응답 DTO
 @Getter @Setter
@@ -21,6 +20,7 @@ public class MemberListResponse {
 
     @JsonProperty("account")
     private String email; // account에 대응
+
     private String nick; // 가운데 글자를 마스킹 (첫글자랑 마지막글자 빼고)
 
     @JsonIgnore

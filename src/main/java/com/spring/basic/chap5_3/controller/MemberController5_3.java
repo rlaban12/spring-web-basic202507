@@ -75,7 +75,6 @@ public class MemberController5_3 {
             return ResponseEntity.notFound().build();
         }
 
-
         try {
             log.debug("members[0].nickname = {}", responses.get(0).getNick());
         } catch (Exception e) {
