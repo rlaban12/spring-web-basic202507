@@ -52,6 +52,6 @@ public class FeedService {
         return FeedDetailResponse.from(feed);
     }
 
-
+    
 
 }
